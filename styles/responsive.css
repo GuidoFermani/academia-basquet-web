@@ -1,0 +1,143 @@
+/*==========================
+        TABLETS
+==========================*/
+
+@media(max-width:900px){
+
+
+.header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+.nav-list{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+
+.features-grid,
+.categories-grid,
+.coaches-grid,
+.gallery-page-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+.training-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+.contact-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.footer-grid{
+
+    grid-template-columns:1fr 1fr;
+
+}
+
+
+}
+/*==========================
+        CELULARES
+==========================*/
+
+@media(max-width:600px){
+
+
+.header{
+
+    padding:20px;
+
+}
+
+
+.logo h1{
+
+    font-size:1.5rem;
+
+    text-align:center;
+
+}
+
+
+
+.nav-list{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+
+.hero h2{
+
+    font-size:2.2rem;
+
+}
+
+
+
+.hero p{
+
+    font-size:1rem;
+
+}
+
+
+
+.features-grid,
+.categories-grid,
+.coaches-grid,
+.gallery-page-grid,
+.training-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.footer-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.gallery-page-grid img{
+
+    height:220px;
+
+}
+
+
+
+.contact-section{
+
+    padding:50px 0;
+
+}
+
+
+}
