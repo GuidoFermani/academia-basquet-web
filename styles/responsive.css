@@ -64,17 +64,14 @@
 
 .header{
 
-    padding:20px;
+    padding: 10px 20px;
 
 }
 
 
-.logo h1{
-
-    font-size:1.5rem;
-
-    text-align:center;
-
+.logo img{
+    width: 75px;
+    height: 75px;
 }
 
 

@@ -47,20 +47,31 @@ ul{
 /* ==========================
    HEADER
 ========================== */
-
 .header{
     background-color: var(--color-secundario);
-    color: var(--color-blanco);
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 20px 60px;
+    padding: 10px 60px;
+
+    min-height: 100px;
+}
+/*==========================
+          LOGO
+==========================*/
+
+.logo{
+    display: flex;
+    align-items: center;
 }
 
-.logo h1{
-    font-size: 2rem;
+.logo img{
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    display: block;
 }
 
 .nav-list{
@@ -92,7 +103,7 @@ ul{
     padding: 40px;
 
     background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-                      url("../assets/images/hero.jpg");
+                      url("../assets/images/hero.png");
 
     background-size: cover;
     background-position: center;
@@ -106,7 +117,9 @@ ul{
 
 .hero h2{
     font-size: 3.5rem;
+    line-height: 1.1;
     margin-bottom: 20px;
+    font-weight: 800;
 }
 
 .hero p{
