@@ -1,151 +1,79 @@
 /*==========================
-        TABLETS
+        TABLETS (max 900px)
 ==========================*/
 
-@media(max-width:900px){
+@media (max-width: 900px) {
 
+    .features-grid,
+    .categories-grid,
+    .coaches-grid,
+    .gallery-page-grid,
+    .values-grid,
+    .mission-content,
+    .methodology-grid,
+    .training-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-.header{
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
 
-    flex-direction:column;
-
-    gap:20px;
-
-}
-
-
-.nav-list{
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-}
-
-
-.features-grid,
-.categories-grid,
-.coaches-grid,
-.gallery-page-grid,
-.values-grid,
-.mission-content{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-.methodology-grid{
-
-    grid-template-columns:repeat(2,1fr);
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 
 }
 
-
-.training-grid{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-
-
-.contact-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-
-.footer-grid{
-
-    grid-template-columns:1fr 1fr;
-
-}
-
-
-}
 /*==========================
-        CELULARES
+        CELULARES (max 600px)
 ==========================*/
 
-@media(max-width:600px){
+@media (max-width: 600px) {
 
+    .logo img {
+        width: 65px;
+        height: 65px;
+    }
 
-.header{
+    .hero h2 {
+        font-size: 2.2rem;
+    }
 
-    padding: 10px 20px;
+    .hero p {
+        font-size: 1rem;
+    }
 
-}
+    .features-grid,
+    .categories-grid,
+    .coaches-grid,
+    .gallery-page-grid,
+    .training-grid,
+    .values-grid,
+    .mission-content,
+    .methodology-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
 
+    .gallery-page-grid img {
+        height: 220px;
+    }
 
-.logo img{
-    width: 75px;
-    height: 75px;
-}
+    .contact-section {
+        padding: 50px 0;
+    }
 
+    /* Estilos para el menú desplegado en móviles */
+    .header .navbar-collapse {
+        margin-top: 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 10px;
+    }
 
-
-.nav-list{
-
-    flex-direction:column;
-
-    align-items:center;
-
-}
-
-
-
-.hero h2{
-
-    font-size:2.2rem;
-
-}
-
-
-
-.hero p{
-
-    font-size:1rem;
-
-}
-
-
-
-.features-grid,
-.categories-grid,
-.coaches-grid,
-.gallery-page-grid,
-.training-grid,
-.values-grid,
-.mission-content,
-.methodology-grid{
-
-
-    grid-template-columns:1fr;
-
-}
-
-
-
-.footer-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-
-
-.gallery-page-grid img{
-
-    height:220px;
-
-}
-
-
-
-.contact-section{
-
-    padding:50px 0;
-
-}
-
+    .header .nav-link {
+        margin-left: 0;
+        padding: 8px 0;
+    }
 
 }

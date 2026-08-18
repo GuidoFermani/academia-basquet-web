@@ -14,7 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/responsive.css">
 
@@ -25,183 +26,317 @@
 
 
 <header class="header">
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand logo" href="../index.html">
+                <img src="../assets/images/logo.png" alt="Next Level Basketball Academy" height="50">
+            </a>
+            
+            <!-- Botón Hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-   <a href="../index.html" class="logo">
-    <img src="../assets/images/logo.png" alt="Next Level Basketball Academy">
-</a>
-
-
-    <nav class="nav">
-
-        <ul class="nav-list">
-
-            <li><a href="../index.html">Inicio</a></li>
-
-            <li><a href="nosotros.html">Nosotros</a></li>
-
-            <li><a href="entrenamientos.html">Entrenamientos</a></li>
-
-            <li><a href="galeria.html">Galería</a></li>
-
-            <li><a href="contacto.html">Contacto</a></li>
-
-        </ul>
-
+            <!-- Menú Desplegable -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto pt-3">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="entrenamientos.html">Entrenamientos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-
 </header>
 
 
 
 <main>
 
+    <!-- HERO -->
+    <section class="training-hero">
 
-<section class="training-hero">
+        <div class="container">
 
-    <div class="container">
+            <h2>Entrenamientos</h2>
 
-        <h2>Entrenamientos</h2>
+            <p>
+                Programas diseñados para desarrollar jugadores completos,
+                mejorando sus fundamentos técnicos, capacidades físicas
+                y comprensión del juego.
+            </p>
 
-        <p>
-            Programas diseñados para desarrollar jugadores completos,
-            mejorando sus fundamentos técnicos, capacidades físicas y comprensión del juego.
-        </p>
+        </div>
 
-    </div>
+    </section>
 
-</section>
 
+    <!-- ÁREAS DE TRABAJO -->
+    <section class="training-content">
 
+        <div class="container">
 
-<section class="training-content">
+            <div class="section-title">
 
+                <h2>Nuestras Áreas de Trabajo</h2>
 
-<div class="container">
+                <p>
+                    Trabajamos de manera integral para acompañar el desarrollo
+                    de cada jugador dentro y fuera de la cancha.
+                </p>
 
+            </div>
 
-<h2>Nuestras Áreas de Trabajo</h2>
 
+            <div class="training-grid">
 
-<div class="training-grid">
+                <article class="training-card">
 
+                    <div class="training-icon">🏀</div>
 
-<article class="training-card">
+                    <h3>Técnica Individual</h3>
 
-    <h3>🏀 Técnica Individual</h3>
+                    <p>
+                        Trabajamos manejo de balón, pases, lanzamientos,
+                        finalizaciones y fundamentos ofensivos y defensivos.
+                    </p>
 
-    <p>
-        Trabajamos manejo de balón, pases, lanzamientos, finalizaciones
-        y fundamentos ofensivos y defensivos.
-    </p>
+                </article>
 
-</article>
 
+                <article class="training-card">
 
+                    <div class="training-icon">⚡</div>
 
-<article class="training-card">
+                    <h3>Preparación Física</h3>
 
-    <h3>⚡ Preparación Física</h3>
+                    <p>
+                        Desarrollamos velocidad, coordinación, resistencia
+                        y fuerza, adaptando cada trabajo a la edad y etapa
+                        de desarrollo del jugador.
+                    </p>
 
-    <p>
-        Desarrollo de velocidad, coordinación, resistencia y fuerza
-        adaptada a cada edad.
-    </p>
+                </article>
 
-</article>
 
+                <article class="training-card">
 
+                    <div class="training-icon">🧠</div>
 
-<article class="training-card">
+                    <h3>Táctica de Juego</h3>
 
-    <h3>🧠 Táctica de Juego</h3>
+                    <p>
+                        Mejoramos la lectura del juego, la toma de decisiones
+                        y la comprensión de conceptos ofensivos y defensivos.
+                    </p>
 
-    <p>
-        Lectura del juego, toma de decisiones, sistemas ofensivos
-        y conceptos defensivos.
-    </p>
+                </article>
 
-</article>
+            </div>
 
+        </div>
 
-</div>
+    </section>
 
 
-</div>
+    <!-- METODOLOGÍA -->
+    <section class="training-methodology">
 
+        <div class="container">
 
-</section>
+            <div class="section-title">
 
+                <h2>¿Cómo Entrenamos?</h2>
 
+                <p>
+                    Nuestro proceso está pensado para que cada jugador aprenda,
+                    practique y pueda aplicar lo aprendido en situaciones reales de juego.
+                </p>
 
-<section class="schedule">
+            </div>
 
 
-<div class="container">
+            <div class="training-methodology-grid">
 
+                <article class="training-methodology-card">
 
-<h2>Categorías y Horarios</h2>
+                    <span>01</span>
 
+                    <h3>Aprender</h3>
 
-<table>
+                    <p>
+                        Presentamos y enseñamos los fundamentos técnicos
+                        y conceptos del juego de manera progresiva.
+                    </p>
 
-<tr>
+                </article>
 
-<th>Categoría</th>
 
-<th>Edad</th>
+                <article class="training-methodology-card">
 
-<th>Días</th>
+                    <span>02</span>
 
-</tr>
+                    <h3>Practicar</h3>
 
+                    <p>
+                        Repetimos y perfeccionamos las habilidades mediante
+                        ejercicios adaptados a cada nivel.
+                    </p>
 
-<tr>
+                </article>
 
-<td>U9</td>
 
-<td>6 a 8 años</td>
+                <article class="training-methodology-card">
 
-<td>Lunes y Miércoles</td>
+                    <span>03</span>
 
-</tr>
+                    <h3>Decidir</h3>
 
+                    <p>
+                        Incorporamos situaciones de juego para desarrollar
+                        la lectura y la toma de decisiones.
+                    </p>
 
-<tr>
+                </article>
 
-<td>U13</td>
 
-<td>11 a 13 años</td>
+                <article class="training-methodology-card">
 
-<td>Martes y Jueves</td>
+                    <span>04</span>
 
-</tr>
+                    <h3>Competir</h3>
 
+                    <p>
+                        Aplicamos lo aprendido en contextos competitivos,
+                        buscando mejorar continuamente.
+                    </p>
 
-<tr>
+                </article>
 
-<td>U15 - U17</td>
+            </div>
 
-<td>14 a 17 años</td>
+        </div>
 
-<td>Lunes, Miércoles y Viernes</td>
+    </section>
 
-</tr>
 
+    <!-- CATEGORÍAS Y HORARIOS -->
+    <section class="schedule">
 
-</table>
+        <div class="container">
 
+            <div class="section-title">
 
-</div>
+                <h2>Categorías y Horarios</h2>
 
+                <p>
+                    Contamos con diferentes grupos adaptados a cada etapa
+                    de formación y desarrollo.
+                </p>
 
-</section>
+            </div>
 
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Categoría</th>
+                            <th>Edad</th>
+                            <th>Días</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+                            <td>U9</td>
+                            <td>6 a 8 años</td>
+                            <td>Lunes y Miércoles</td>
+                        </tr>
+
+                        <tr>
+                            <td>U11</td>
+                            <td>9 a 10 años</td>
+                            <td>Martes y Jueves</td>
+                        </tr>
+
+                        <tr>
+                            <td>U13</td>
+                            <td>11 a 12 años</td>
+                            <td>Martes y Jueves</td>
+                        </tr>
+
+                        <tr>
+                            <td>U15</td>
+                            <td>13 a 14 años</td>
+                            <td>Lunes, Miércoles y Viernes</td>
+                        </tr>
+
+                        <tr>
+                            <td>U17</td>
+                            <td>15 a 16 años</td>
+                            <td>Lunes, Miércoles y Viernes</td>
+                        </tr>
+
+                        <tr>
+                            <td>Mayores</td>
+                            <td>17 años en adelante</td>
+                            <td>A confirmar</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
 
 </main>
 
 
-
 <footer class="footer">
+
+<div class="container footer-grid">
+
+    <div class="footer-about">
+        <h3>Next Level Basketball Academy</h3>
+        <p>
+            Formando jugadores, potenciando habilidades y transmitiendo
+            valores a través del básquet.
+        </p>
+    </div>
+
+    <div class="footer-links">
+        <h3>Enlaces</h3>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="entrenamientos.html">Entrenamientos</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-contact">
+        <h3>Contacto</h3>
+        <p>📍 Resistencia, Chaco</p>
+        <p>📱 WhatsApp: 3624 XXX XXX</p>
+        <p>✉ Email: info@nextlevelbasket.com</p>
+    </div>
+
+</div>
 
 <div class="footer-bottom">
 
@@ -214,7 +349,8 @@
 </footer>
 
 
-
+<!-- Bootstrap Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
