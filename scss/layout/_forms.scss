@@ -1,0 +1,52 @@
+@use "../base/variables" as *;
+
+.contact-section {
+    padding: 80px 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-info {
+    background-color: $color-claro;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.contact-info h2, .contact-form h2 {
+    margin-bottom: 25px;
+}
+
+.contact-form {
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    input, textarea {
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 15px;
+        background-color: $color-principal;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
+}

@@ -2,224 +2,137 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Contacto | Next Level Basketball Academy</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<meta name="description" content="Inscribite o sumate a las prácticas de Next Level Basketball Academy en Resistencia, Chaco. Envianos tu consulta por formulario o WhatsApp.">
+<meta name="keywords" content="inscripción básquet resistencia, sumar a club de básquet, contacto academia básquet, informes entrenamientos chaco">
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  
-<link rel="stylesheet" href="../styles/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/responsive.css">
-
 </head>
-
 
 <body>
 
+    <header class="header">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand logo" href="../index.html">
+                    <img src="../assets/images/logo.png" alt="Next Level Basketball Academy" height="50">
+                </a>
+                
+                <!-- Botón Hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-<header class="header">
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-            <!-- Logo -->
-            <a class="navbar-brand logo" href="../index.html">
-                <img src="../assets/images/logo.png" alt="Next Level Basketball Academy" height="50">
-            </a>
-            
-            <!-- Botón Hamburguesa -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <!-- Menú Desplegable -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto pt-3">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="entrenamientos.html">Entrenamientos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-            <!-- Menú Desplegable -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto pt-3">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="entrenamientos.html">Entrenamientos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+    <main>
+        <!-- HERO -->
+        <section class="contact-hero">
+            <div class="container">
+                <h2>Contacto</h2>
+                <p>
+                    ¿Querés formar parte de nuestra academia?
+                    Comunicate con nosotros.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN CONTACTO -->
+        <section class="contact-section">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <h2>Información</h2>
+                    <p>📍 Resistencia, Chaco</p>
+                    <p>📱 WhatsApp: 3624 XXX XXX</p>
+                    <p>✉ Email: info@nextlevelbasket.com</p>
+
+                    <h3>Seguinos</h3>
+                    <p>Instagram | Facebook | TikTok</p>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Formulario de inscripción</h2>
+
+                    <form action="#" method="POST">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Ingresá tu email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu consulta" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <h3>Next Level Basketball Academy</h3>
+                <p>Formando jugadores, potenciando habilidades y transmitiendo valores a través del básquet.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="entrenamientos.html">Entrenamientos</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
+
+            <div class="footer-contact">
+                <h3>Contacto</h3>
+                <p>📍 Resistencia, Chaco</p>
+                <p>📱 WhatsApp: 3624 XXX XXX</p>
+                <p>✉ Email: info@nextlevelbasket.com</p>
+            </div>
         </div>
-    </nav>
-</header>
 
+        <div class="footer-bottom">
+            <p>© 2026 Next Level Basketball Academy. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
-
-<main>
-
-
-<section class="contact-hero">
-
-    <div class="container">
-
-        <h2>Contacto</h2>
-
-        <p>
-            ¿Querés formar parte de nuestra academia?
-            Comunicate con nosotros.
-        </p>
-
-    </div>
-
-</section>
-
-
-
-<section class="contact-section">
-
-
-<div class="container contact-grid">
-
-
-
-<div class="contact-info">
-
-
-<h2>Información</h2>
-
-
-<p>📍 Resistencia, Chaco</p>
-
-<p>📱 WhatsApp: 3624 XXX XXX</p>
-
-<p>✉ Email: info@nextlevelbasket.com</p>
-
-
-<h3>Seguinos</h3>
-
-
-<p>
-Instagram | Facebook | TikTok
-</p>
-
-
-</div>
-
-
-
-
-<div class="contact-form">
-
-
-<h2>Formulario de inscripción</h2>
-
-
-
-<form>
-
-
-<label for="nombre">
-Nombre completo
-</label>
-
-
-<input 
-type="text" 
-id="nombre"
-placeholder="Ingresá tu nombre">
-
-
-
-<label for="email">
-Email
-</label>
-
-
-<input 
-type="email"
-id="email"
-placeholder="Ingresá tu email">
-
-
-
-<label for="mensaje">
-Mensaje
-</label>
-
-
-<textarea 
-id="mensaje"
-rows="5"
-placeholder="Escribí tu consulta">
-</textarea>
-
-
-
-<button type="submit">
-Enviar mensaje
-</button>
-
-
-</form>
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-</main>
-
-
-
-<footer class="footer">
-
-<div class="container footer-grid">
-
-    <div class="footer-about">
-        <h3>Next Level Basketball Academy</h3>
-        <p>
-            Formando jugadores, potenciando habilidades y transmitiendo
-            valores a través del básquet.
-        </p>
-    </div>
-
-    <div class="footer-links">
-        <h3>Enlaces</h3>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="entrenamientos.html">Entrenamientos</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </div>
-
-    <div class="footer-contact">
-        <h3>Contacto</h3>
-        <p>📍 Resistencia, Chaco</p>
-        <p>📱 WhatsApp: 3624 XXX XXX</p>
-        <p>✉ Email: info@nextlevelbasket.com</p>
-    </div>
-
-</div>
-
-<div class="footer-bottom">
-
-<p>
-© 2026 Next Level Basketball Academy
-</p>
-
-</div>
-
-</footer>
-
-
-<!-- Bootstrap Bundle JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
 </html>

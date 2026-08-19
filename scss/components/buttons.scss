@@ -1,0 +1,33 @@
+@use "sass:color";
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+// Plantilla base con @extend
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background-color: $color-principal;
+    color: white;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+}
+
+.btn-secondary {
+    border: 2px solid white;
+    color: white;
+
+    &:hover {
+        background-color: white;
+        color: black;
+    }
+}

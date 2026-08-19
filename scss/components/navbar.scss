@@ -1,0 +1,25 @@
+@use "../base/variables" as *;
+
+// Estilado personalizado sobre Bootstrap Navbar usando Nesting
+.navbar {
+    background-color: $color-secondary !important;
+    padding: 1rem 0;
+
+    .navbar-brand {
+        img {
+            transition: transform 0.3s ease;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .nav-link {
+        color: $color-light;
+        font-weight: 500;
+        
+        &:hover, &.active {
+            color: $color-primary !important;
+        }
+    }
+}

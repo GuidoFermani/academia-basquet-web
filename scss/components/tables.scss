@@ -1,0 +1,42 @@
+@use "../base/variables" as *;
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.schedule {
+    padding: 80px 0;
+    background-color: $color-claro;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    table {
+        width: 100%;
+        min-width: 650px;
+        border-collapse: collapse;
+        background: white;
+
+        th {
+            background-color: $color-secundario;
+            color: white;
+        }
+
+        th, td {
+            padding: 18px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        tbody tr {
+            transition: 0.3s;
+
+            &:hover {
+                background-color: #f5f5f5;
+            }
+        }
+    }
+}

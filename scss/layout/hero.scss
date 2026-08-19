@@ -1,0 +1,50 @@
+@use "../base/variables" as *;
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../assets/images/hero.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    .hero-content {
+        max-width: 700px;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+        line-height: 1.1;
+        margin-bottom: 20px;
+        font-weight: 800;
+    }
+
+    p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin-bottom: 40px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+.about-hero, .training-hero, .gallery-hero, .contact-hero {
+    padding: 100px 0;
+    background-color: $color-secundario;
+    color: white;
+    text-align: center;
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+}

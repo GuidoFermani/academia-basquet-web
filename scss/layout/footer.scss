@@ -1,0 +1,45 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+footer {
+    background-color: #111;
+    color: white;
+    padding-top: 60px;
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    h3 {
+        margin-bottom: 20px;
+        color: $color-principal;
+    }
+
+    p {
+        line-height: 1.7;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    a {
+        color: white;
+        transition: 0.3s;
+
+        &:hover {
+            color: $color-principal;
+        }
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-top: 50px;
+        padding: 20px;
+        border-top: 1px solid #333;
+    }
+}
