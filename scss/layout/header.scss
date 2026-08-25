@@ -2,37 +2,129 @@
 @use "../base/mixins" as *;
 
 .header {
+
     background-color: $color-secundario;
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
+
     padding: 10px 60px;
+
     min-height: 100px;
+
 }
 
 .logo {
+
     display: flex;
+
     align-items: center;
 
     img {
+
         width: 90px;
+
         height: 90px;
+
         object-fit: contain;
+
         display: block;
+
     }
+
 }
 
 .nav-list {
+
     display: flex;
+
     gap: 30px;
 
     a {
+
         color: $color-blanco;
+
         font-weight: bold;
+
         transition: 0.3s;
 
         &:hover {
+
             color: $color-principal;
+
         }
+
     }
+
+}
+
+// 1. Navbar a todo lo ancho con Flexbox
+
+.navbar {
+
+    width: 100%;
+
+    background-color: $color-secundario !important; // Fondo uniforme oscuro
+
+    padding: 15px 30px !important;
+
+    border: none !important;
+
+    box-shadow: none !important;
+
+    // Contenedor interno de Bootstrap para separar logo a la izq y botón a la der
+
+    .container-fluid, .container {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        width: 100%;
+
+        padding: 0;
+
+    }
+
+    .navbar-brand img {
+
+        width: 70px;
+
+        height: 70px;
+
+        object-fit: contain;
+
+    }
+
+    // 2. Quitar el borde/marco gris del botón hamburguesa
+
+    .navbar-toggler {
+
+        border: none !important;
+
+        outline: none !important;
+
+        box-shadow: none !important;
+
+        padding: 5px 10px;
+
+        &:focus {
+
+            box-shadow: none !important;
+
+        }
+
+        // Color blanco para las tres rayitas del menú
+
+        .navbar-toggler-icon {
+
+            filter: invert(1);
+
+        }
+}
 }
