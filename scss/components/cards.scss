@@ -199,3 +199,18 @@
     // Centrado de contenido con mixin
     @include flex-center(row, center, center);
 }
+.categories-grid, .features-grid, .coaches-grid, .training-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr !important; // Hace que U17, Mayores, etc. se apilen
+    }
+}
+
+.category-card, .feature-card, .coach-card, .training-card {
+    width: 100%; // Garantiza que no sobrepase el ancho de la pantalla
+    box-sizing: border-box;
+}

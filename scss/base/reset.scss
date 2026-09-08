@@ -52,3 +52,16 @@ h1, h2, h3 {
     font-size: 1.1rem;
     line-height: 1.7;
 }
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; // Corta cualquier desbordamiento accidental
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
