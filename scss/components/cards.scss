@@ -180,3 +180,22 @@
     font-size: 3rem;
     margin-bottom: 20px;
 }
+.features-grid, .categories-grid, .coaches-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    // Adaptación responsive limpia con mixin
+    @include respond-to("mobile") {
+        grid-template-columns: 1fr;
+    }
+}
+
+.coach-placeholder {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    
+    // Centrado de contenido con mixin
+    @include flex-center(row, center, center);
+}
